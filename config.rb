@@ -17,7 +17,7 @@ config[:fonts_dir]    = 'assets/fonts'
 config[:layouts_dir]  = 'layouts'
 
 # Use relative URLs
-activate :relative_assets
+# activate :relative_assets
 # Sitemap URLs (use trailing slashes). Create additional variables here
 # for referencing your pages.
 config[:url_portfolio] = '/projects/'
@@ -60,7 +60,7 @@ end
 
 # Pretty URLs
 # This must be activated AFTER the blog extension
-# activate :directory_indexes
+activate :directory_indexes
 
 
 
