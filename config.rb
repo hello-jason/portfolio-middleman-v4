@@ -64,8 +64,6 @@ activate :directory_indexes
 
 
 
-
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
