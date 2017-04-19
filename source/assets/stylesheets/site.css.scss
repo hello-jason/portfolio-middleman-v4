@@ -1,24 +1,41 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+/*
+ *= require lightcase/src/css/lightcase
+ */
 
-a {
-  color: rgba(#000, 0.7);
+@charset "utf-8";
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
-}
+/* ==========================================================================
+ * Imports / Includes
+ * ========================================================================== */
+@import "variables"; // Bootstrap overrides and variables
+@import "bootstrap-includes"; // Bootstrap core
+@import "mixins";
+@import "layout";
+@import "banner";
+@import "projects";
+@import "about";
+@import "contact";
+@import "footer";
+@import "typography";
+@import "navigation";
+@import "globals";
+@import "article";
+@import "lightcase"; // Lightbox-like JavaScript image gallery
+@import "pygments-css-default";  // Themes http://richleland.github.io/pygments-css/
+@import "codepen";
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
+// Case studies
+@import "case-study-contactmover";
+@import "case-study-pfsync";
+@import "case-study-tooltracker";
+
+// Articles
+@import "article-windows-vs-osx";
+
+/* ==========================================================================
+ * Media queries to target specific breakpoints
+/* ==========================================================================
+ * @media screen and (min-width: $screen-sm-min) {}
+ * @media screen and (min-width: $screen-md-min) {}
+ * @media screen and (min-width: $screen-lg-min) {}
+*/
