@@ -27,17 +27,25 @@ config[:url_about]     = 'about/'
 config[:url_blog]      = '/'
 config[:url_home]      = '/'
 
+# ========================================================================
 # Activate and configure extensions
+# ========================================================================
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 # Slim template engine
 require "slim"
 
+# Bootstrap
+require "bootstrap-sass"
+
+# Autoprefixer
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# ========================================================================
 # Layouts
+# ========================================================================
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
