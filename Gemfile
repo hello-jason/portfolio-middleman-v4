@@ -16,7 +16,7 @@ gem 'slim', '~> 3.0.6'
 gem 'middleman-blog', '~> 4.0.1'
 # gem "redcarpet", "~> 3.3.4"
 # gem "middleman-rouge", "~> 0.0.1"
-# gem "middleman-disqus", "~> 1.1.0"
+gem "middleman-disqus", "~> 1.2.0"
 
 # Because Windows
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
