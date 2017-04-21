@@ -73,9 +73,29 @@ end
 activate :directory_indexes
 
 
+# ========================================================================
+# Development-specific configuration
+# ========================================================================
+configure :development do
+  # Disqus comments
+  activate :disqus do |d|
+    # using a special shortname
+    d.shortname = "hello-jason-dev"
+    # or setting to `nil` will stop Disqus loading
+    # d.shortname = nil
+  end
+end
+
+
+# ========================================================================
 # Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
-  config[:site_url]       = 'https://hellojason.net'
+  config[:host]       = 'https://hellojason.net'
+
+  # Disqus comments
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "hellojason"
+  end
 end
