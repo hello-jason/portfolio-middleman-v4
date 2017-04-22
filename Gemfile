@@ -14,8 +14,8 @@ gem 'slim', '~> 3.0.6'
 
 # Blogging
 gem 'middleman-blog', '~> 4.0.1'
-# gem "redcarpet", "~> 3.3.4"
-# gem "middleman-rouge", "~> 0.0.1"
+gem "redcarpet", "~> 3.4.0"
+gem "middleman-syntax", "~> 3.0.0"
 gem "middleman-disqus", "~> 1.2.0"
 
 # Because Windows
@@ -24,15 +24,14 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
 # Optimization & minification
 # gem "middleman-jquery", "~> 2.1.1"
-# gem "middleman-imageoptim", "~> 0.2.1"
-# gem "image_optim_pack", "~> 0.2.1.20160103"
-# gem "middleman-minify-html", "~> 3.4.1"
+gem "middleman-imageoptim", "~> 0.2.1"
+gem "middleman-minify-html", "~> 3.4.1"
 
 # Development
 # gem "middleman-livereload", "~> 3.4.6"
 # gem "oj", "~> 2.14.3"
 
 # Deploying
-#gem "middleman-favicon-maker", "~> 3.7"
+gem "middleman-favicon-maker", "~> 4.0.4"
 #gem "middleman-deploy", "~> 1.0.0"
 # gem "builder", "~> 3.2.2"
