@@ -99,18 +99,20 @@ configure :build do
   config[:host]       = 'https://hellojason.net'
 
   # Ignore file/dir during build process
-  ignore "layouts/"
+  ignore "layouts/*"
+  ignore "**/.keep"
+  ignore "all-methods.*"
 
   # Optimization
   set :sass, line_comments: false, style: :compressed
-  activate :minify_css
   activate :minify_html
+  activate :minify_css
   activate :minify_javascript
   activate :gzip
 
   # Cache buster
   activate :asset_hash, :exts => ['.css', '.js']
-
+=begin
   # Compress and optimise images during build
   # Documentation: https://github.com/plasticine/middleman-imageoptim
   activate :imageoptim do |options|
@@ -121,6 +123,7 @@ configure :build do
     # Cause image_optim to be in shouty-mode
     options.verbose = false
   end
+=end
 
   # Disqus comments
   activate :disqus do |d|
